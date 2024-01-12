@@ -1,0 +1,261 @@
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #141414;
+
+}
+
+.star_container {
+
+    margin-left: 85%;
+    margin-top: 16%;
+    scale: 0.7;
+}
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 80%;
+    margin: 2% auto; 
+    background-color: #0d0d0d;
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    position: fixed;
+    top: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.logo {
+    display: flex;
+    margin-left: 2%;
+}
+
+.logo_main {
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    margin: 1% 0% 1% 55%;
+    z-index: 1;
+}
+
+a {
+    margin: 0% 10%;
+    text-decoration: none;
+    padding: 5% 10%;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    color: #ffffff;
+}
+
+.main {
+    background-image: url(../images/lines.svg);
+    background-size: cover;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    margin: 5% 0%;
+}
+
+.main_h1 {
+    font-family: 'COCOGOOSE', sans-serif;
+    text-shadow:
+        1px 1px 0 #fff,
+        -1px 1px 0 #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff;
+    margin: auto;
+    text-align: center;
+    font-size: 5rem;
+    color: #141414;
+    z-index: 0;
+}
+
+.cursor {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    margin-left: -13px;
+    margin-top: -10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transform-origin: center center;
+    z-index: 1000;
+    pointer-events: none;
+}
+
+.grow, .grow_small {
+    transform: scale(2.5);
+    mix-blend-mode: difference;
+    background-color: #fff;
+}
+
+.grow_small {
+    transform: scale(2.0);
+}
+
+.casestudy_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.casestudy {
+    font-family: 'COCOGOOSE', sans-serif;
+    text-shadow:
+        1px 1px 0 #fff,
+        -1px 1px 0 #fff,
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #141414;
+    margin: 0px auto;
+}
+
+.casestudy_text_container {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.casestudy_div {
+    margin: auto;
+}
+
+.text_casestudy {
+    width: 95%;
+    color: white;
+    font-family: 'COCOGOOSE', sans-serif;
+    margin: 2% auto;
+}
+.span {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    scale: 0.7;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+}
+
+.image1 {
+    scale: 0.6;
+    margin-left: -5%;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.image2 {
+    scale: 0.6;
+    -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.image2:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.image1:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.logo_main:hover {
+    scale:1.5,
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 4.5%;
+    right: 5%;
+    z-index: 9999; /* Ensure it's above other elements */
+}
+
+
+
+/* Dark mode styles */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+
+}
+
+.dark-mode .nav_container {
+    background-color: #141414;
+    border: 1px solid #ffffff;
+}
+
+.dark-mode a {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.dark-mode .casestudy {
+    color: #ff6200; 
+    text-shadow:
+    0 0 0 #000,
+    -0 0 0 #000,
+    -0 -0 0 #000,
+    0 -0 0 #000;
+}
+
+.dark-mode .text_casestudy {
+    color: white;
+}
+
+.dark-mode .image1,
+.dark-mode .image2 {
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
+
+.dark-mode .casesvg {
+    fill: #ffffff; 
+}
+
+.dark-mode a{
+    border: 1px solid #ff6200;
+}
+
+.dark-mode .orange {
+    color: #ff6200;
+    text-shadow:
+    0 0 0 #000,
+    -0 0 0 #000,
+    -0 -0 0 #000,
+    0 -0 0 #000;
+}
+
+.dark-mode .image1:hover {
+    scale:0.65;
+    transition: all 1s ease;
+    border: 5px solid #ff6200;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
